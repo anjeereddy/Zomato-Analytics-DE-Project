@@ -32,7 +32,6 @@ permissions:
   contents: write
   deployments: write
   pull-requests: write
-
 jobs:
   deploy:
     name: Deploy to Databricks
