@@ -8,7 +8,7 @@ Usage:
         --host https://your-workspace.cloud.databricks.com \
         --token dapi... \
         --workspace-path /Workspace/Zomato-Analytics \
-        --alert-email dataarchitectstudio@gmail.com
+        --alert-email anji.pothula@gmail.com
 """
 
 import argparse
@@ -156,7 +156,7 @@ def main():
     parser.add_argument("--host", required=True, help="Databricks workspace URL")
     parser.add_argument("--token", required=True, help="Databricks PAT")
     parser.add_argument("--workspace-path", required=True, help="Notebook workspace path")
-    parser.add_argument("--alert-email", default="dataarchitectstudio@gmail.com", help="Alert email")
+    parser.add_argument("--alert-email", default="anji.pothula@gmail.com", help="Alert email")
     args = parser.parse_args()
 
     host = args.host.rstrip("/")

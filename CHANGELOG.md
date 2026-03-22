@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Databricks Job Auto-Creation** (`scripts/create_databricks_job.py`)
   - REST API script to create/update Databricks Job automatically
   - 6-task dependency chain: DDL → Data Gen → Bronze → Silver → Gold → Dashboard
-  - Email alerts to `dataarchitectstudio@gmail.com` on success/failure
+  - Email alerts to `anji.pothula@gmail.com` on success/failure
   - CD pipeline auto-creates the job after notebook deployment
 - **Deployment Gate in CI** — Pre-merge dry-run deployment to staging path
   - Catches deployment issues before code is merged to main

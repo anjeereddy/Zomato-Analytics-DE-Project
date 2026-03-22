@@ -90,7 +90,7 @@ jobs:
             --host "$DATABRICKS_HOST" \
             --token "$DATABRICKS_TOKEN" \
             --workspace-path "${{ env.WORKSPACE_PATH }}" \
-            --alert-email "dataarchitectstudio@gmail.com"
+            --alert-email "anji.pothula@gmail.com"
 
       - name: Deployment summary
         if: steps.smoke_test.outcome == 'success'

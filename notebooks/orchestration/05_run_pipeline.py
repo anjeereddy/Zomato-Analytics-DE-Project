@@ -13,7 +13,7 @@
 # MAGIC     → 04_analytics_dashboard → Email Alert (with dashboard link)
 # MAGIC ```
 # MAGIC
-# MAGIC **Email Alerts**: Sends to `dataarchitectstudio@gmail.com` with:
+# MAGIC **Email Alerts**: Sends to `anji.pothula@gmail.com` with:
 # MAGIC - Clean subject: `SUCCESS` or `FAILED` with pipeline name
 # MAGIC - Body: step results, record counts, duration, exception details on failure
 
@@ -51,7 +51,7 @@ SMTP_PASSWORD = dbutils.widgets.get("smtp_password")
 WEBHOOK_URL = dbutils.widgets.get("webhook_url")
 
 # ─── Alert Recipients ───────────────────────────────────────
-ALERT_EMAIL_TO = "dataarchitectstudio@gmail.com"
+ALERT_EMAIL_TO = "anji.pothula@gmail.com"
 PIPELINE_NAME = "Zomato Analytics — Medallion Pipeline"
 # ─────────────────────────────────────────────────────────────
 
@@ -405,7 +405,7 @@ def send_email(
     total_duration: float,
     failed_step: dict = None,
 ) -> None:
-    """Send pipeline alert email to dataarchitectstudio@gmail.com."""
+    """Send pipeline alert email to anji.pothula@gmail.com."""
 
     # ── Build subject ──
     date_str = datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC")
