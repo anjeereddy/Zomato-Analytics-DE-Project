@@ -299,7 +299,7 @@ create_tables → generate_data → bronze_ingestion → silver_transformation �
 The job is **auto-created by CD** and includes:
 - Task dependencies (each step waits for the previous)
 - Configurable schedule (default: daily 2:00 AM IST, starts paused)
-- Email notifications to `anji.pothula@gmail.com` on success/failure
+- Email notifications to `custom email address` on success/failure
 - Auto-retry on Bronze ingestion failures
 
 ### Pipeline Alerts
